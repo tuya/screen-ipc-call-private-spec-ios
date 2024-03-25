@@ -1,4 +1,4 @@
-# screen-ipc-call-private-spec-ios
+# Video Call SDK
 
 ## Integrate with the SDK
 step1: add the below code in Podfile
@@ -8,8 +8,6 @@ step2: add pod `'ThingSmartCameraKit', '~> 5.11.0-beta.1'` in Podfile
 
 step3: run `pod update`.
 
-Note: If you do not need other fetures, you could specify SDKs version. 
-
-#### Features
+## Features
 - add audio/video call
 - fix bugs
