@@ -11,3 +11,6 @@ step3: run `pod update`.
 ## Features
 - add audio/video call
 - fix bugs
+
+## Demo
+[Demo](https://github.com/tuya/tuya-home-ios-sdk-sample-objc/tree/screen_ipc_call)
