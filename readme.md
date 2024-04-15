@@ -10,7 +10,7 @@ step1: add the below code in Podfile
 `pod 'ThingSmartCameraSettingBizBundle', '~> 5.11.0'`
 `pod 'ThingSmartCloudServiceBizBundle', '~> 5.11.0'`
 
-step3: run `pod update`.
+step2: run `pod update`.
 
 ### Features
 - add audio/video call
