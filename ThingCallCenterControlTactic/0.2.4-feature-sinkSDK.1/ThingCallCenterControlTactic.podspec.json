@@ -1,0 +1,48 @@
+{
+    "authors": {
+        "TuyaInc": "https://developer.tuya.com/"
+    },
+    "cocoapods_version": ">= 1.10",
+    "dependencies": {
+        "Masonry": [],
+        "ThingAlertView": [],
+        "ThingCallModule": [],
+        "ThingCameraUIKit": [],
+        "ThingEncryptImage": [],
+        "ThingFoundationKit": [],
+        "ThingLogMacro": [],
+        "ThingMicrophoneAuthManager": [],
+        "ThingOEMConfig": [],
+        "ThingProgressHUD": [],
+        "ThingSmartBaseKit": [],
+        "ThingSmartCallChannelKit": [],
+        "ThingSmartCameraBizKit": [],
+        "ThingSmartDeviceCoreKit": [],
+        "ThingSmartMQTTChannelKit": [],
+        "ThingSmartNetworkKit": [],
+        "ThingUIKit": [],
+        "YYModel": []
+    },
+    "description": "TODO: Add long description of the pod here.",
+    "homepage": "https://github.com/tuya",
+    "license": "none",
+    "name": "ThingCallCenterControlTactic",
+    "platforms": {
+        "ios": "10.0"
+    },
+    "prefix_header_contents": "#import <ThingLogMacro/ThingLogMacro.h>\n\n#undef ThingLogDebug\n#define ThingLogDebug(...) ThingLogger(0, @\"ThingCallCenterControlTactic\", ##__VA_ARGS__)\n\n#undef ThingLogInfo\n#define ThingLogInfo(...)  ThingLogger(1,  @\"ThingCallCenterControlTactic\", ##__VA_ARGS__)\n\n#undef ThingLogWarn\n#define ThingLogWarn(...)  ThingLogger(2,  @\"ThingCallCenterControlTactic\", ##__VA_ARGS__)\n\n#undef ThingLogError\n#define ThingLogError(...) ThingLogger(3, @\"ThingCallCenterControlTactic\", ##__VA_ARGS__)",
+    "resource_bundles": {
+        "ThingCallCenterControlTactic": [
+            "ThingCallCenterControlTactic/Assets/*"
+        ]
+    },
+    "source": {
+        "http": "https://airtake-public-data-1254153901.cos.ap-shanghai.myqcloud.com/smart/app/package/pods/ios/ThingCallCenterControlTactic-0.2.4-feature-sinkSDK.1.zip",
+        "type": "zip"
+    },
+    "summary": "A short description of ThingCallCenterControlTactic.",
+    "vendored_frameworks": [
+        "ThingCallCenterControlTactic.xcframework"
+    ],
+    "version": "0.2.4-feature-sinkSDK.1"
+}

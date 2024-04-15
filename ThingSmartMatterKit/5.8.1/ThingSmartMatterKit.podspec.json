@@ -1,0 +1,51 @@
+{
+    "authors": {
+        "TuyaInc": "https://developer.tuya.com/"
+    },
+    "dependencies": {
+        "ThingBluetooth": [
+            "~> 5.0"
+        ],
+        "ThingSmartBaseKit": [
+            "~> 5.0"
+        ],
+        "ThingSmartDeviceCoreKit": [
+            "~> 5.2"
+        ],
+        "ThingSmartUtil": [
+            "~> 5.7"
+        ]
+    },
+    "homepage": "https://github.com/tuya",
+    "license": "none",
+    "name": "ThingSmartMatterKit",
+    "platforms": {
+        "ios": "9.0"
+    },
+    "pod_target_xcconfig": {
+        "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES": "YES",
+        "DEFINES_MODULE": "YES",
+        "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64",
+        "OTHER_LDFLAGS": "-ObjC",
+        "TUYA_CODE_SIGN_ENTITLEMENTS": "com.apple.developer.matter.allow-setup-payload"
+    },
+    "prefix_header_contents": "#ifdef __OBJC__\n  #import \"ThingSmartMatterKit.h\"\n  #import \"NSError+ThingMatter.h\"\n  #import \"ThingSmartMatterDevice.h\"\n  #import \"ThingMatterDeviceConnectManage.h\"\n  #import \"ThingMatterAttributeReaderHelper.h\"\n  \n  #undef ThingLog\n  #undef ThingSDKLogDebug\n  #undef ThingSDKLogInfo\n  #undef ThingSDKLogWarn\n  #undef ThingSDKLogError\n\n  #define ThingLog(...)           ThingSDKLog(1, @\"ThingSmartMatterKit\", __FILE__, __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)\n  #define ThingSDKLogDebug(...)           ThingSDKLog(0, @\"ThingSmartMatterKit\", __FILE__, __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)\n  #define ThingSDKLogInfo(...)           ThingSDKLog(1, @\"ThingSmartMatterKit\", __FILE__, __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)\n  #define ThingSDKLogWarn(...)           ThingSDKLog(2, @\"ThingSmartMatterKit\", __FILE__, __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)\n  #define ThingSDKLogError(...)           ThingSDKLog(3, @\"ThingSmartMatterKit\", __FILE__, __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)\n#endif",
+    "resources": [
+        "Build/ThingSmartMatterKit.xcframework/ios-arm64/ThingSmartMatterKit.framework/CustomResources/Assets/*"
+    ],
+    "source": {
+        "http": "https://airtake-public-data-1254153901.cos.ap-shanghai.myqcloud.com/smart/app/package/pods/ios/ThingSmartMatterKit-5.8.1.zip",
+        "type": "zip"
+    },
+    "static_framework": true,
+    "summary": "A short description of ThingSmartMatterKit.",
+    "user_target_xcconfig": {
+        "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES": "YES"
+    },
+    "vendored_frameworks": [
+        "Build/VendorsFramework/ThingMatterSupport.framework",
+        "Build/VendorsFramework/Water.framework",
+        "Build/ThingSmartMatterKit.xcframework"
+    ],
+    "version": "5.8.1"
+}
