@@ -12,6 +12,9 @@ step1: add the below code in Podfile
 
 step2: run `pod update`.
 
+### Note
+if you need other UIBizBundles, please upgrade the versions to `5.11.0`
+
 ### Features
 - add audio/video call
 - fix bugs
